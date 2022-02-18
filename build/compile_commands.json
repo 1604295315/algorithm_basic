@@ -1,7 +1,0 @@
-[
-{
-  "directory": "D:/Projects/C/algorithm_basic/build",
-  "command": "D:\\MinGW\\bin\\mingw32-g++.exe   -g -o CMakeFiles\\main.dir\\main.cpp.obj -c D:\\Projects\\C\\algorithm_basic\\main.cpp",
-  "file": "D:/Projects/C/algorithm_basic/main.cpp"
-}
-]

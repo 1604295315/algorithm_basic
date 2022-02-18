@@ -1,5 +1,0 @@
-D:/Projects/C/algorithm_basic/build/CMakeFiles/main.dir
-D:/Projects/C/algorithm_basic/build/CMakeFiles/edit_cache.dir
-D:/Projects/C/algorithm_basic/build/CMakeFiles/rebuild_cache.dir
-D:/Projects/C/algorithm_basic/build/src/CMakeFiles/edit_cache.dir
-D:/Projects/C/algorithm_basic/build/src/CMakeFiles/rebuild_cache.dir
