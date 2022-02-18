@@ -3,3 +3,6 @@ D:/Projects/C/algorithm_basic/build/CMakeFiles/edit_cache.dir
 D:/Projects/C/algorithm_basic/build/CMakeFiles/rebuild_cache.dir
 D:/Projects/C/algorithm_basic/build/src/CMakeFiles/edit_cache.dir
 D:/Projects/C/algorithm_basic/build/src/CMakeFiles/rebuild_cache.dir
+D:/Projects/C/algorithm_basic/build/src/chapter01/CMakeFiles/fast.dir
+D:/Projects/C/algorithm_basic/build/src/chapter01/CMakeFiles/edit_cache.dir
+D:/Projects/C/algorithm_basic/build/src/chapter01/CMakeFiles/rebuild_cache.dir

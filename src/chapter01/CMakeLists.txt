@@ -1,0 +1,1 @@
+add_executable(fast 1011.cpp)

@@ -86,14 +86,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\C\algorithm_basic\build\CMakeFiles D:\Projects\C\algorithm_basic\build\\CMakeFiles\progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
+	cd /d D:\Projects\C\algorithm_basic\build && $(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\C\algorithm_basic\build\CMakeFiles D:\Projects\C\algorithm_basic\build\src\chapter01\\CMakeFiles\progress.marks
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/chapter01/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Projects\C\algorithm_basic\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 clean
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/chapter01/clean
 .PHONY : clean
 
 # The main clean target
@@ -102,68 +102,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/chapter01/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 preinstall
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/chapter01/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d D:\Projects\C\algorithm_basic\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named main
+# Convenience name for target.
+src/chapter01/CMakeFiles/fast.dir/rule:
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/chapter01/CMakeFiles/fast.dir/rule
+.PHONY : src/chapter01/CMakeFiles/fast.dir/rule
 
-# Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main
-.PHONY : main
-
-# fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
-.PHONY : main/fast
-
-#=============================================================================
-# Target rules for targets named fast
-
-# Build rule for target.
-fast: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 fast
+# Convenience name for target.
+fast: src/chapter01/CMakeFiles/fast.dir/rule
 .PHONY : fast
 
 # fast build rule for target.
 fast/fast:
-	$(MAKE) $(MAKESILENT) -f src\chapter01\CMakeFiles\fast.dir\build.make src/chapter01/CMakeFiles/fast.dir/build
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f src\chapter01\CMakeFiles\fast.dir\build.make src/chapter01/CMakeFiles/fast.dir/build
 .PHONY : fast/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+1011.obj: 1011.cpp.obj
+.PHONY : 1011.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+1011.cpp.obj:
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f src\chapter01\CMakeFiles\fast.dir\build.make src/chapter01/CMakeFiles/fast.dir/1011.cpp.obj
+.PHONY : 1011.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+1011.i: 1011.cpp.i
+.PHONY : 1011.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.i
-.PHONY : main.cpp.i
+1011.cpp.i:
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f src\chapter01\CMakeFiles\fast.dir\build.make src/chapter01/CMakeFiles/fast.dir/1011.cpp.i
+.PHONY : 1011.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+1011.s: 1011.cpp.s
+.PHONY : 1011.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/main.cpp.s
-.PHONY : main.cpp.s
+1011.cpp.s:
+	cd /d D:\Projects\C\algorithm_basic\build && $(MAKE) $(MAKESILENT) -f src\chapter01\CMakeFiles\fast.dir\build.make src/chapter01/CMakeFiles/fast.dir/1011.cpp.s
+.PHONY : 1011.cpp.s
 
 # Help Target
 help:
@@ -174,10 +162,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... fast
-	@echo ... main
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... 1011.obj
+	@echo ... 1011.i
+	@echo ... 1011.s
 .PHONY : help
 
 
@@ -189,6 +176,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d D:\Projects\C\algorithm_basic\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

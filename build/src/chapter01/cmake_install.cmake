@@ -1,4 +1,4 @@
-# Install script for directory: D:/Projects/C/algorithm_basic/src
+# Install script for directory: D:/Projects/C/algorithm_basic/src/chapter01
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,10 +35,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "D:/MinGW/bin/objdump.exe")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("D:/Projects/C/algorithm_basic/build/src/chapter01/cmake_install.cmake")
 endif()
 

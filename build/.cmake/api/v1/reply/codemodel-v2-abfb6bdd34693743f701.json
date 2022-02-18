@@ -19,11 +19,15 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
 					"build" : "src",
+					"childIndexes" : 
+					[
+						2
+					],
 					"jsonFile" : "directory-src-Debug-c94b7c2814d5a21df52c.json",
 					"minimumCMakeVersion" : 
 					{
@@ -32,6 +36,21 @@
 					"parentIndex" : 0,
 					"projectIndex" : 0,
 					"source" : "src"
+				},
+				{
+					"build" : "src/chapter01",
+					"jsonFile" : "directory-src.chapter01-Debug-dd7000625f4e900efc3a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.23"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "src/chapter01",
+					"targetIndexes" : 
+					[
+						0
+					]
 				}
 			],
 			"name" : "Debug",
@@ -41,21 +60,30 @@
 					"directoryIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					],
 					"name" : "algorithm_basic",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
 			"targets" : 
 			[
 				{
+					"directoryIndex" : 2,
+					"id" : "fast::@fffa88694ebeb5b9bebb",
+					"jsonFile" : "target-fast-Debug-9e3334bca2a9b1ab6e68.json",
+					"name" : "fast",
+					"projectIndex" : 0
+				},
+				{
 					"directoryIndex" : 0,
 					"id" : "main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-main-Debug-673a54376cc9dc938424.json",
+					"jsonFile" : "target-main-Debug-9052def392f3eadf6389.json",
 					"name" : "main",
 					"projectIndex" : 0
 				}
