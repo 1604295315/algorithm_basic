@@ -1,3 +1,0 @@
-D:\SoftWare\CMake\bin\cmake.exe -E rm -f CMakeFiles\fast.dir/objects.a
-D:\MinGW\bin\ar.exe qc CMakeFiles\fast.dir/objects.a @CMakeFiles\fast.dir\objects1.rsp
-D:\MinGW\bin\mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\fast.dir/objects.a -Wl,--no-whole-archive -o fast.exe -Wl,--out-implib,libfast.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\fast.dir\linklibs.rsp
