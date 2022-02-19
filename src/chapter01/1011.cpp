@@ -21,7 +21,13 @@ void quick_sort(int q[], int l, int r)
         while (q[ ++ i] < x);
         while (q[ -- j] > x);
         if(i < j) 
-            swap(q[i], q[j]);
+        {
+            // swap(q[i], q[j]);
+            int temp = q[i];
+            q[i] = q[j];
+            q[j] = temp;
+        }
+
     }
     quick_sort(q,l,j);
     quick_sort(q, j+1, r); 
