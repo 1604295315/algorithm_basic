@@ -31,6 +31,7 @@ void merge_sort(int q[], int l, int r)
         else
             tmp[k ++] = q[j ++];
     }
+    //剩下的元素存入
     while (i <= mid)
         tmp[k++] = q[i++];
     while (j <= r)
