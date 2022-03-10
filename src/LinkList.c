@@ -30,7 +30,7 @@ LNode *init_listnode(int val){
 
 LinkList *init_linklist() {
     LinkList *l = (LinkList *)malloc(sizeof(LinkList));
-    l->head->next = NULL;
+    l->head.next = NULL;
     l->length = 0;
     return l;
 }
