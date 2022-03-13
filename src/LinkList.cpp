@@ -112,5 +112,6 @@ int main() {
         output(l);
         printf("\n");
     }
+    clear_linklist(l);
     return 0;
 }
