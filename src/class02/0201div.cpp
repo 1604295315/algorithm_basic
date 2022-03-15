@@ -4,9 +4,6 @@
 
 using namespace std;
 
-// void reverse() {
-
-// }
 // C = A / b; 商是C, 余数是r;
 vector<int> div(vector<int> &A, int b, int &r) {
     vector<int> C;
@@ -16,9 +13,11 @@ vector<int> div(vector<int> &A, int b, int &r) {
         C.push_back(r / b);
         r %= b;
     }
-    reverse(C.begin(),C.end());
+
+    reverse(C.begin(), C.end());
+
     while(C.size() > 1 && C.back() == 0) C.pop_back();
-    int t = 0;
+
     return C;
 }
 
@@ -28,7 +27,7 @@ int main() {
     int b;
     cin >> a >> b;
 
-    for (int i = a.size() - 1; i >= 0; i ++) A.push_back(a[i] - '0');
+    for (int i = a.size() - 1; i >= 0; i --) A.push_back(a[i] - '0');
 
     int r;
 
