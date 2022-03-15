@@ -4,31 +4,29 @@
 对于每个询问，输出原序列中从第 l 个数到第 r 个数的和。
 */
 
-#include <iostream>
+#include <stdio.h>
 
-using namespace std;
-
-const int N = 1e6 + 10;
+const int N = 100010;
+int n,m;
+int a[N];
+int s[N];
 
 int main() {
-    int n,m;
-    int q[N];
-    int s[N];
 
-    cin >> n >> m;
+    scanf("%d%d", &n, &m);
     
-    for (int i = 0; i < n; i ++)
-        scanf("%d",q+i);
+    for (int i = 1; i <= n; i ++)
+        scanf("%d", &a[i]);
 
     // 前缀和初始化
     s[0] = 0;
 
-    for (int i = 1; i < n; i ++)
-        s[i] = s[i - 1] + q[i];
+    for (int i = 1; i <= n; i ++)
+        s[i] = s[i - 1] + a[i];
 
     int l = 0, r = 0;
     while(m --){
         scanf("%d%d", &l, &r);
-        printf("%d\n", s[l] - s[r - 1]);
+        printf("%d\n", s[r] - s[l - 1]);
     }
 }

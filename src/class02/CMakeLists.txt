@@ -6,4 +6,5 @@ add_executable(1_div 0201div.cpp)
 
 # 前缀和
 
-add_executable(qianzuihe 0202.cpp)
+add_executable(qianzuihe1 020201.cpp)
+add_executable(qianzuihe2 020202.cpp)
