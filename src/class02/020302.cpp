@@ -33,7 +33,7 @@ int main() {
     scanf("%d%d%d", &n, &m, &q);
 
     for (int i = 1; i <= n; i ++)
-        for (int j = 0; j <= m; j ++)
+        for (int j = 1; j <= m; j ++)
             scanf("%d", &a[i][j]);
 
     for (int i = 1; i <= n; i ++)
@@ -53,7 +53,7 @@ int main() {
             b[i][j] += b[i - 1][j] + b[i][j - 1] - b[i - 1][j - 1];
             printf("%d ", b[i][j]);
         }    
-        putchar('\n');
+        printf("\n");
     }
     return 0;
 }
