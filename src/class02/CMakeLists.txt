@@ -8,3 +8,8 @@ add_executable(1_div 0201div.cpp)
 
 add_executable(qianzuihe1 020201.cpp)
 add_executable(qianzuihe2 020202.cpp)
+
+# 差分
+
+add_executable(chafen1 020301.cpp)
+add_executable(chafen2 020302.cpp)

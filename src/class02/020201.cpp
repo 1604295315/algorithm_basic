@@ -10,7 +10,7 @@ const int N = 100010;
 int n,m;
 int a[N];
 int s[N];
-
+#define get_sum(l,r) (l ? s[r] - s[l-1] : s[r])
 int main() {
 
     scanf("%d%d", &n, &m);
@@ -27,6 +27,6 @@ int main() {
     int l = 0, r = 0;
     while(m --){
         scanf("%d%d", &l, &r);
-        printf("%d\n", s[r] - s[l - 1]);
+        printf("%d\n", get_sum(l,r));
     }
 }
