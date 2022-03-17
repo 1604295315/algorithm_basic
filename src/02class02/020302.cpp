@@ -12,7 +12,6 @@
     b[x2 - 1][y1] -= c;
     b[x1][y2 + 1] -= c;
     b[x2 + 1][y2 + 1] += c;
-
 */
 #include <stdio.h>
 

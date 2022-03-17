@@ -1,6 +1,5 @@
-build/*
-.vscode/*
+build
+.vscode
 .gitignore
 .idea
-cmake-build-stm32
-cmake-build-debug
+cmake-build-*
