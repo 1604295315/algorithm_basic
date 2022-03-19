@@ -1,0 +1,1 @@
+add_executable(t786 786.cpp)
