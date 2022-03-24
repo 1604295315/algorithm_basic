@@ -1,45 +1,41 @@
 #include <stdio.h>
 
-const int N = 1e6 + 10;
+const int N = 100010;
 
-int n;
+int n, k;
 int q[N];
 
-void quick_sort(int q[], int l, int r)
+int quick_sort(int q[], int l, int r, int k)
 {
-    if (l >= r)
-        return ;
+    if (l == r)
+        return q[l];    
     
     int i = l - 1, j = r + 1;
-    int x = q[l + r >> 1 ];
+    int x = q[l + r >> 1];
     while(i < j)
     {
         while (q[ ++ i] < x);
         while (q[ -- j] > x);
         if(i < j) 
         {
-            int temp = q[i];
-            q[i] = q[j];
-            q[j] = temp;
+            q[i] ^= q[j], q[j] ^= q[i], q[i] ^= q[j];
         }
     }
-    quick_sort(q,l,j);
-    quick_sort(q, j+1, r); 
+    int sl = j - l + 1;
+    if (sl >= k)
+        return quick_sort(q, l, j , k);
+    else
+        return quick_sort(q, j+1, r, k - sl); 
 }
 
 int main(int argc, char const *argv[])
 {
-    scanf("%d", &n);
+    scanf("%d%d", &n, &k);
     for (int i = 0; i < n; i ++)
         scanf("%d", &q[i]);
     
-    quick_sort(q, 0, n-1);
+    printf("%d", quick_sort(q, 0, n-1, k));
 
-    for (int i = 0; i < n; i ++)
-    {
-        i && printf(" ");
-        printf("%d", q[i]);
-    }
     printf("\n");
     return 0;
 }
