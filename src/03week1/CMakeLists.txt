@@ -1,1 +1,6 @@
-add_executable(t786 786.cpp)
+add_executable(w1t786 786.cpp)
+add_executable(w1t788 788.cpp)
+add_executable(w1t790 790.cpp)
+add_executable(w1t795 795.cpp)
+add_executable(w1t796 796.cpp)
+add_executable(w1t797 797.cpp)

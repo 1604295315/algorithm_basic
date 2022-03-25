@@ -47,7 +47,7 @@ int main(int argc, char const *argv[])
 //         printf("%d args\n", argc - 1);
 //     return 0;
 // }
-/*
+
 int Partition(int q[], int l, int r) {
     int pivot = q[l];
     while (l < r)
@@ -68,5 +68,3 @@ void QuickSort(int q[], int l, int r) {
         QuickSort(q, pivotpos + 1, r);
     }
 }
-
-*/

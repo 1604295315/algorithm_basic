@@ -22,7 +22,8 @@ void merge_sort(int q[], int l, int r)
     merge_sort(q, l, mid);
     merge_sort(q, mid + 1, r);
     
-    //排序
+    // 排序 二路归并 
+    // 核心操作 : 把数组内的两个有序序列归并为一个
     int k = 0, i = l, j = mid + 1;
     while (i <= mid && j <= r)
     {
