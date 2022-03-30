@@ -6,6 +6,18 @@
 
 #include <iostream>
 
+
+#ifdef DEBUG
+#define log(frm, argc...) {\
+    printf("[%s : %d] ", __func__, __LINE__);\
+    printf(frm, ##argc);\
+    printf("\n");\
+    printf("[%s][%d][%s][%s][%s]\n",__FUNCTION__,__LINE__,__DATE__,__FILE__,__TIME__);\
+}
+#else
+#define log printf
+#endif
+
 using namespace std;
 
 const int N = 1e4 + 10;
@@ -27,8 +39,11 @@ int main() {
     while (q --) {
         scanf("%d%d%d%d", &x1, &y1, &x2, &y2);
         int x = s[x2][y2] - s[x1 - 1][y2] - s[x2][y1 -1] + s[x1 -1][y1 - 1];
-        printf("%d\n", x);
+        // printf("%d\n", x);
+        log("%d\n", x);
     }
+    int *p = &q;
+    log("%p\n", &p);
     return 0;
 
 }

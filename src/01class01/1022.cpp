@@ -11,6 +11,8 @@ int main()
     cin >> x;
     double l = 0, r = x;
     // while (r - l > 1e-8)
+    if (r < 1)
+        r = 1;
     for (int i = 0; i < 100; i++)
     {//4 -6 5 -7 6 -8 经验值
         double mid = (l + r) / 2.0;
