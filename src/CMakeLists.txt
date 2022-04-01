@@ -1,7 +1,8 @@
 # ycx 算法基础课
-add_subdirectory(01class01)
-add_subdirectory(02class02)
+add_subdirectory(01chapter01)
+add_subdirectory(02chapter01)
 add_subdirectory(03week1)
+add_subdirectory(04chapter01)
 
 
 # huguang 数据结构
