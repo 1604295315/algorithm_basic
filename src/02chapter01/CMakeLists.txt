@@ -12,4 +12,4 @@ add_executable(06qianzuihe2 020202.cpp)
 # 差分
 
 add_executable(07chafen1 020301.cpp)
-add_executable(08chafen2 020302.cpp)
+add_executable(07chafen2 020302.cpp)
