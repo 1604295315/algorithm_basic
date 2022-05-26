@@ -1,4 +1,4 @@
-// 堆
+// 堆 二叉树 完全二叉树 非常 平衡 大根堆 小根堆
 // down
 // up
 // AcWing 838. 堆排序
@@ -11,7 +11,7 @@ const int N = 100010;
 int n, m;
 int h[N], s;
 
-int down(int u) {
+void down(int u) {
     int t = u;
     if (u * 2 <= s && h[u * 2] < h[t]) t = u * 2;
     if (u * 2 + 1 <= s && h[u * 2 + 1] < h[t]) t = u * 2 + 1;
@@ -21,6 +21,12 @@ int down(int u) {
     }
 }
 
+void up(int u) {
+    while (u / 2 && h[u/2] > h[u]) {
+        swap(h[u / 2], h[u]);
+        u /= 2;
+    }
+}
 int main() {
     scanf("%d%d", &n, &m);
     for (int i = 1; i <= n; i ++) {
