@@ -12,4 +12,4 @@ add_subdirectory(21LinkList&SequenList)
 add_subdirectory(22Queue&Stack)
 
 # others
-add_subdirectory(x)
+# add_subdirectory(x)
